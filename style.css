@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+body {
+    font-family: Roboto;
+}
+
+.container {
+    width: 336px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    border: lightgray solid 1px;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.yellow-block {
+    background-color: #FFDC40;
+    width: 100%;
+    height: 28px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.for-sort {
+    width: 100%;
+    display: block;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.sort-image {
+    display: block;
+    position: relative;
+    left: 280px;
+    fill: lightgray;
+}
+
+.sort-image:hover {
+    fill: black;
+}
+
+.frame {
+    width: 286px;
+    min-height: 38px;
+    margin-left: auto;
+    margin-right: auto;
+    border: lightgray solid 1px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 8px;
+}
+
+.note {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.input-for-note {
+    border: none;
+    width: 220px;
+}
+
+.input-for-note:focus {
+    border: none;
+    outline: none;
+    height: 20px;
+}
+
+p {
+
+}
+
+.remove-btn {
+    -webkit-appearance: none;
+     -moz-appearance: none;
+    appearance: none;
+    background: none;
+    border: 0;
+    margin: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: lightgray solid 1px;
+    margin-top: 0;
+    margin-bottom: 0;
+    position: relative;
+}
+
+
+.close::before, .close::after {
+    position: absolute;
+    bottom: 1.15px;
+    right: 8.52px;
+    content: ' ';
+    height: 15px;
+    width: 1px;
+    background-color: lightgray;
+}
+
+.close:hover::before, .close:hover::after {
+    background-color: white;
+}
+
+.close:before {
+    transform: rotate(45deg);
+}
+.close:after {
+    transform: rotate(-45deg);
+}
+
+.remove-btn:hover {
+    background-color: #833AE0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: white solid 1px;
+} 
+
+
+.submit {
+    -webkit-appearance: none;
+     -moz-appearance: none;
+    appearance: none;
+    background: #ccc;
+    border: 0;
+    width: 150px;
+    height: 42px;
+    color: white;
+    background-color: #833AE0;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 21px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 19px;
+    margin-top: 19px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 14px;
+}
+
+.submit:hover {
+    background-color: white;
+    border: #9953F1 solid 2px;
+    color: #9953F1;
+    font-weight: 900;
+}
+
+.circle {
+    width: 42px;
+    height: 42px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: #9953F1;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
