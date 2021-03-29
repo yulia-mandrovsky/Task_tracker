@@ -12,30 +12,44 @@
         <div class="yellow-block"></div>
         <h1>To-Do List</h1>
         <div class="for-sort">
-            <svg class="sort-image" width="25" height="15" viewBox="0 0 25 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="sort-image1 sort-image" width="25" height="15" viewBox="0 0 25 15" xmlns="http://www.w3.org/2000/svg">
                 <rect x="5" y="15" width="2.5" height="12.5" transform="rotate(-180 5 15)" />
                 <rect x="10" y="3.75" width="2.5" height="7.5" transform="rotate(-90 10 3.75)" />
                 <rect x="10" y="8.75" width="2.5" height="10" transform="rotate(-90 10 8.75)" />
                 <rect x="10" y="13.75" width="2.5" height="15" transform="rotate(-90 10 13.75)" />
                 <path d="M3.75 6.55671e-07L6.99759 4.6875L0.502404 4.6875L3.75 6.55671e-07Z" />
-                </svg>
+            </svg>
+            <svg class="sort-image2 sort-image display-none" width="25" height="15" viewBox="0 0 25 15" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2.5" width="2.5" height="12.5"/>
+                <rect x="10" y="3.75" width="2.5" height="7.5" transform="rotate(-90 10 3.75)"/>
+                <rect x="10" y="8.75" width="2.5" height="10" transform="rotate(-90 10 8.75)"/>
+                <rect x="10" y="13.75" width="2.5" height="15" transform="rotate(-90 10 13.75)"/>
+                <path d="M3.75 15L0.502405 10.3125L6.9976 10.3125L3.75 15Z"/>
+            </svg>
+                
                 
         </div>
-        <div class="frame">
-            <div class="note">
+        <ul class="frame myUL">
+            <li class="note" draggable="true">
+                <svg class="dots" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="2" cy="2" r="2" fill="#C4C4C4"/>
+                    <circle cx="2" cy="10" r="2" fill="#C4C4C4"/>
+                    <circle cx="10" cy="2" r="2" fill="#C4C4C4"/>
+                    <circle cx="10" cy="10" r="2" fill="#C4C4C4"/>
+                    </svg>
                 <input class="input-for-note" type="text">
                 <button class="remove-btn close"></button>
-            </div>
-        </div>
+            </li>
+        </ul>
         <button class="submit">
                 
                 <div class="circle">
                     <p>+</p>
                 </div>
                 Добавить
-           
         </button>
     </div>
     <script src="script.js"></script>
+    <!-- <script src="dnd.js"></script> -->
 </body>
 </html>

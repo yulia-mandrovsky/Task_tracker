@@ -25,6 +25,10 @@ h1 {
     margin-bottom: 20px;
 }
 
+button:active, button:focus {
+    outline: none;
+}
+
 .for-sort {
     width: 100%;
     display: block;
@@ -37,6 +41,10 @@ h1 {
     position: relative;
     left: 280px;
     fill: lightgray;
+}
+
+svg.display-none {
+    display: none;
 }
 
 .sort-image:hover {
@@ -63,9 +71,15 @@ h1 {
     text-align: center;
     justify-content: space-between;
     margin-bottom: 12px;
-    /* border: lightgray solid 1px;
-    border-radius: 5px;
-    height: 30px; */
+    padding-top: 3px;
+    cursor: move;
+    user-select: none;
+}
+
+.dots {
+    display: block;
+    position: relative;
+    top: 4px;
 }
 
 .input-for-note {
@@ -103,7 +117,7 @@ p {
 .close::before, .close::after {
     position: absolute;
     bottom: 1.15px;
-    right: 8.52px;
+    right: 8.48px;
     content: ' ';
     height: 15px;
     width: 1px;
@@ -161,6 +175,10 @@ p {
     border: #9953F1 solid 2px;
     color: #9953F1;
     font-weight: 900;
+}
+
+.submit:hover .circle {
+    color: white;
 }
 
 .circle {
