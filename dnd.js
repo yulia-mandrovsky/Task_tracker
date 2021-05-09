@@ -1,5 +1,7 @@
 let draggingEle;
 
+// didn't finish it
+
 // The current position of mouse relative to the dragging element
 let x = 0;
 let y = 0;
